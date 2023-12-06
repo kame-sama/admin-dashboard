@@ -11,3 +11,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: grid;
+  grid-template: auto 1fr / 300px 1fr;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main';
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: main;
+}
